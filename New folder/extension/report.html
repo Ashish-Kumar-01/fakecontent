@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detection Report</title>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+
+      body {
+        margin: 0;
+        min-width: 380px;
+        min-height: 520px;
+        padding: 16px;
+        background:
+          radial-gradient(circle at top right, rgba(34, 124, 112, 0.12), transparent 36%),
+          linear-gradient(180deg, #f5efe3, #f7f7f2);
+        color: #1f2933;
+        font: 14px/1.4 "Segoe UI", sans-serif;
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(31, 41, 51, 0.08);
+        border-radius: 18px;
+        padding: 14px 16px;
+        margin-bottom: 12px;
+      }
+
+      .title {
+        font-size: 24px;
+        font-weight: 700;
+        font-family: Georgia, "Times New Roman", serif;
+        margin-bottom: 4px;
+      }
+
+      .eyebrow {
+        font-size: 11px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: #52606d;
+        margin-bottom: 10px;
+      }
+
+      .muted {
+        color: #52606d;
+      }
+
+      .hero {
+        background: linear-gradient(160deg, #0b3c49, #227c70);
+        color: #f5efe3;
+      }
+
+      .score {
+        font-size: 30px;
+        font-weight: 700;
+      }
+
+      .pill {
+        display: inline-block;
+        padding: 7px 10px;
+        border-radius: 999px;
+        background: rgba(34, 124, 112, 0.12);
+        color: #184e4a;
+        font-size: 12px;
+        margin: 6px 6px 0 0;
+      }
+
+      ul {
+        padding-left: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="eyebrow">Investigation View</div>
+    <div class="title">Fake Content Detection Assistant</div>
+    <div id="app" class="muted">No analysis has been run yet.</div>
+    <script src="report.js"></script>
+  </body>
+  </html>

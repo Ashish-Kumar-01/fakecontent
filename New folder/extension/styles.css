@@ -1,0 +1,248 @@
+.fcda-analyze-button {
+  position: absolute;
+  z-index: 2147483647;
+  border: none;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.22), transparent 50%),
+    linear-gradient(135deg, #0b3c49, #227c70);
+  color: #f8fbf6;
+  padding: 11px 15px;
+  font: 600 13px/1.2 Georgia, "Segoe UI", serif;
+  cursor: pointer;
+  box-shadow: 0 14px 30px rgba(11, 60, 73, 0.35);
+}
+
+.fcda-report-panel {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  width: 390px;
+  max-height: calc(100vh - 36px);
+  overflow: auto;
+  z-index: 2147483647;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(245, 239, 227, 0.96)),
+    radial-gradient(circle at top right, rgba(34, 124, 112, 0.2), transparent 35%);
+  color: #1f2933;
+  border: 1px solid rgba(31, 41, 51, 0.08);
+  border-radius: 28px;
+  padding: 18px;
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.25);
+  font: 14px/1.45 "Segoe UI", sans-serif;
+  backdrop-filter: blur(14px);
+}
+
+.fcda-header {
+  font-size: 23px;
+  font-weight: 700;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.fcda-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.fcda-hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px;
+  border-radius: 22px;
+  background:
+    linear-gradient(160deg, rgba(11, 60, 73, 0.96), rgba(34, 124, 112, 0.92)),
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.18), transparent 35%);
+  color: #f7f4eb;
+}
+
+.fcda-eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.82;
+  margin-bottom: 8px;
+}
+
+.fcda-hero-copy {
+  margin-top: 8px;
+  max-width: 240px;
+  color: rgba(247, 244, 235, 0.88);
+}
+
+.fcda-subtle {
+  color: #52606d;
+  font-size: 12px;
+}
+
+.fcda-status,
+.fcda-error {
+  padding: 14px;
+  border-radius: 18px;
+  background: rgba(255, 250, 240, 0.9);
+}
+
+.fcda-chip {
+  display: inline-block;
+  padding: 8px 13px;
+  border-radius: 999px;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.fcda-likely_authentic {
+  background: #d8f3dc;
+  color: #1b4332;
+}
+
+.fcda-possibly_manipulated {
+  background: #ffe8b6;
+  color: #7c4f00;
+}
+
+.fcda-highly_suspicious {
+  background: #ffd6d6;
+  color: #8b1e3f;
+}
+
+.fcda-insufficient_evidence {
+  background: #dde7f0;
+  color: #274c77;
+}
+
+.fcda-score-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.fcda-score-card {
+  padding: 15px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(31, 41, 51, 0.08);
+}
+
+.fcda-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #52606d;
+}
+
+.fcda-meta-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  padding: 2px 2px 0;
+}
+
+.fcda-inline-value {
+  display: block;
+  margin-top: 4px;
+  color: #102a43;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.fcda-score {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.fcda-small {
+  font-size: 22px;
+  text-transform: capitalize;
+}
+
+.fcda-section-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #52606d;
+  margin: 2px 0 2px;
+}
+
+.fcda-top-signals,
+.fcda-detail-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.fcda-top-pill,
+.fcda-detail-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: rgba(34, 124, 112, 0.1);
+  color: #184e4a;
+  font-size: 12px;
+}
+
+.fcda-evidence-item {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  padding: 14px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(31, 41, 51, 0.08);
+}
+
+.fcda-evidence-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.fcda-meter {
+  height: 8px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(148, 163, 184, 0.22);
+  margin: 10px 0;
+}
+
+.fcda-meter span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #ffb703, #e76f51);
+}
+
+.fcda-evidence-summary {
+  color: #334e68;
+  margin-bottom: 10px;
+}
+
+.fcda-notes {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.fcda-close-button {
+  margin-top: 16px;
+  width: 100%;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #0b3c49, #227c70);
+  color: #fff;
+  padding: 12px 14px;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .fcda-report-panel {
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    width: auto;
+    max-height: calc(100vh - 20px);
+  }
+}
